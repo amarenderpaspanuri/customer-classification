@@ -11,7 +11,7 @@ Building the project
 
 Clone the repository:
 
-> https://github.com/amarenderpaspanuri/customer-classification
+> git clone https://github.com/amarenderpaspanuri/customer-classification
 
 Navigate to the newly created folder:
 
