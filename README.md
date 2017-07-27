@@ -20,7 +20,10 @@ Navigate to the newly created folder:
 Run the project :
 
 > mvn clean spring-boot:run
-
 or
-
 > run build.bat
+
+
+Access Url once the tomcat server is up and running on port 8081:
+
+> http://localhost:8081/classifyForm
