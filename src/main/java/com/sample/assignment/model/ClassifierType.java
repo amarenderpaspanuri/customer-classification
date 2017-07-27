@@ -1,0 +1,5 @@
+package com.sample.assignment.model;
+
+public enum ClassifierType {
+	FAST_SPENDER, BIG_TICKET_SPENDER, AFTER_NOON_PERSON, MORNING_PERSON, BIG_SPENDER, POTENTIAL_SAVER, POTENTIAL_LOAN
+}
