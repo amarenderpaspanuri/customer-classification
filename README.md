@@ -20,7 +20,9 @@ Navigate to the newly created folder:
 Run the project :
 
 > mvn clean spring-boot:run
+
 or
+
 > run build.bat
 
 
