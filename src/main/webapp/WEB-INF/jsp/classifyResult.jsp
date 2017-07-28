@@ -36,8 +36,8 @@
 	<c:if test="${not empty transactions}">
 		<table>
 			<tr>
-				<th>Amount</th>
-				<th>Date/Time</th>
+				<th>Amount in $</th>
+				<th>Transaction Date/Time</th>
 				<th>Description</th>
 				<th>Transaction Type</th>
 			</tr>
