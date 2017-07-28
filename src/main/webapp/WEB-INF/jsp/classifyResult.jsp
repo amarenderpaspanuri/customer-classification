@@ -5,17 +5,35 @@
 
 <head>
 <title>Customer Classification</title>
+
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+table#t01 th {
+    background-color: #f1f1c1;
+}
+</style>
+
 </head>
 
 <body>
 	<form:form method = "GET" action = "/classifyForm">
-		<table>
-		   <tr>
-		      <td>
-		         <input type = "submit" value = "Back"/>
-		      </td>
-		   </tr>
-		</table>  
+		<input type = "submit" value = "Back"/>
 	</form:form>
 	<hr>
 	
@@ -34,7 +52,8 @@
 	</c:if>
 	
 	<c:if test="${not empty transactions}">
-		<table>
+		<b>Transactions :</b>
+		<table id="t01">
 			<tr>
 				<th>Amount in $</th>
 				<th>Transaction Date/Time</th>
@@ -52,5 +71,4 @@
 		</table>	
 	</c:if>
 </body>
-
 </html>
