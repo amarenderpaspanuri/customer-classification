@@ -127,7 +127,8 @@ public class CustomerClassificationServiceImpl implements CustomerClassification
 					}
 					
 					// Spends over 75% of any deposit within 7 days of making it
-					if (amountSpentInSevenDaysAfterDeposit.compareTo(new BigDecimal("1000")) >= 0) {
+					if ((totalDeposits.longValue() > 0) 
+							&& ((amountSpentInSevenDaysAfterDeposit.longValue() * 100)/totalDeposits.longValue()) > 75) {
 						response.getClassifications().add(ClassifierType.FAST_SPENDER);
 					}
 				}
